@@ -11,7 +11,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
+import StarIcon from '@material-ui/icons/Star';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -73,16 +73,12 @@ function ResponsiveDrawer(props) {
             <ListItemText primary={'Overview'} />
           </ListItem>
 
-          <ListItem button key={'Ariocarpus'}>
-            <ListItemIcon><InboxIcon /></ListItemIcon>
-            <ListItemText primary={'Ariocarpus'} />
-          </ListItem>
 
       </List>
       <List>
-        {['Overview', 'Ariocarpus', 'Copiapoa', 'Pachypodium'].map((text, index) => (
+        {['Ariocarpus', 'Copiapoa', 'Pachypodium'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon><StarIcon></StarIcon></ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -91,7 +87,7 @@ function ResponsiveDrawer(props) {
       <List>
         {['Social', 'Contact'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon><StarIcon /></ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
