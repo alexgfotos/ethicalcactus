@@ -2,7 +2,7 @@ import './App.css';
 import Container from '@material-ui/core/Container'
 import Nav from './components/Nav'
 // import Drawer from './components/Drawer'
-import Home from './components/Home'
+import Home from './components/home'
 
 function App() {
   return (
