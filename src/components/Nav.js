@@ -25,9 +25,10 @@ export default function ButtonAppBar() {
       >
         <Toolbar style={{
           backgroundColor: "#8a3433",
+          textAlign: "center"
           
         }}>
-          <Typography variant="h6" noWrap align= "center">
+          <Typography variant="h4" noWrap align= "center">
             ETHICAL CACTUS
           </Typography>
         </Toolbar>
